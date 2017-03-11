@@ -6,9 +6,9 @@ git_exclude="./.git/info/exclude"
 #Declare functions
 check_exclude() {
 	if [ -e $git_exclude ]; then
-		echo "File found"
+		echo "File ${git_exclude} found"
 	else
-		echo "File not found"
+		echo "File ${git_exclude} not found"
 		exit 1
 	fi
 }
